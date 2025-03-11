@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.status, .map, .notifications, .statistics {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#map {
+    height: 300px;
+    background-color: #e0e0e0;
+}
+
+#bins-status {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bin {
+    width: 100px;
+    text-align: center;
+}
+
+/* Bin status colors */
+.bin-status {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bin-status.full {
+    color: red;
+}
+
+.bin-status.warning {
+    color: yellow;
+}
+
+.bin-status.almost-full {
+    color: orange;
+}
+
+.bin-status.low {
+    color: green;
+}
+
+.notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notifications li {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid red;
+}
+
+.stats p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
