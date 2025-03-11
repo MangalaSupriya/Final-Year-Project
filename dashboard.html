@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Garbage Monitoring Dashboard</h1>
+    </header>
+
+    <section class="dashboard">
+        <!-- Real-time Status Section -->
+        <div class="status">
+            <h2>Real-Time Bin Status</h2>
+            <div id="bins-status">
+                <!-- Real-time data will be injected here dynamically -->
+            </div>
+        </div>
+
+        
+
+        <!-- Notifications Section -->
+        <div class="notifications">
+            <h2>Alerts & Notifications</h2>
+            <ul id="notifications-list">
+                <!-- Notifications will be dynamically loaded -->
+            </ul>
+        </div>
+
+        <!-- Summary Statistics Section -->
+        <div class="statistics">
+            <h2>Summary Statistics</h2>
+            <div class="stats">
+                <p>Total Bins: <span id="total-bins">0</span></p>
+                <p>Full Bins: <span id="full-bins">0</span></p>
+                <p>Average Fill Level: <span id="avg-fill">0%</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
